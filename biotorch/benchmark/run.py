@@ -67,9 +67,7 @@ class Benchmark:
             if self.mode not in self.mode_names:
                 raise ValueError("Mode not {} supported".format(self.mode))
 
-            print("models.__dict__:", models.__dict__)
             options = models.__dict__[self.mode].__dict__
-            print("options:", options)
             self.model_names = sorted(name for name in options if name.islower() and not name.startswith("__")
                                       and callable(options[name]))
 
