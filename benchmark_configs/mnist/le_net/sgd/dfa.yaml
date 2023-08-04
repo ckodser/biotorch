@@ -15,7 +15,7 @@ data:
 
 # Model
 model:
-  architecture: "le_net_cifar"
+  architecture: "le_net_mnist"
   mode:
     type: "dfa"
     options:
