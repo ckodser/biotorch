@@ -18,7 +18,7 @@ class ClassifierMLP(torch.nn.Module):
     def __init__(self, pretrained, progress, num_classes):
         super(ClassifierMLP, self).__init__()
         self.layers = []
-        input_size = 728
+        input_size = 784
         for i, h in enumerate([2000,2000,2000,2000]):
             self.layers.append(nn.Linear(input_size, h))
             self.layers.append(nn.ReLU())
