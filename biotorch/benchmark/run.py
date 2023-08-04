@@ -114,6 +114,7 @@ class Benchmark:
         self.num_classes = self.dataset.num_classes
 
         # Create model
+        print(self.model_names)
         if self.model_config['architecture'] is not None and self.model_config['architecture'] in self.model_names:
             arch = self.model_config['architecture']
             if self.model_config['pretrained']:
