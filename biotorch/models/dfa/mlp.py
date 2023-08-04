@@ -32,7 +32,7 @@ class ClassifierMLP(torch.nn.Module):
         return x
 
 
-def MLP(pretrained: bool = False, progress: bool = True, num_classes: int = 1000, layer_config=None) :
+def mlp(pretrained: bool = False, progress: bool = True, num_classes: int = 1000, layer_config=None) :
     r"""AlexNet model architecture from the
     `"One weird trick..." <https://arxiv.org/abs/1404.5997>`_ paper.
     The required minimum input size of the model is 63x63.
