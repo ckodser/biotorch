@@ -1,6 +1,7 @@
 import torchvision.models as models
 from biotorch.models.utils import create_torchvision_biomodel
-
+import torch
+from torch import nn
 
 MODE = 'dfa'
 MODE_STRING = 'Direct Feedback Alignment'
