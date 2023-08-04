@@ -8,7 +8,7 @@ experiment:
 
 # Dataset
 data:
-  dataset: "mnist_benchmark"
+  dataset: "mnist"
   dataset_path: null
   target_size: 28
   num_workers: 0
